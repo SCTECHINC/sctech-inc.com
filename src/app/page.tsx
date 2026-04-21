@@ -78,6 +78,25 @@ const Icon = {
       <path d="M12 3l8 3v6c0 4.5-3.4 8.4-8 9-4.6-.6-8-4.5-8-9V6l8-3z" />
     </svg>
   ),
+  Mobile: (p: IconProps) => (
+    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" {...p}>
+      <rect x="6" y="2" width="12" height="20" rx="2.5" />
+      <path d="M10 18h4" />
+    </svg>
+  ),
+  Agent: (p: IconProps) => (
+    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" {...p}>
+      <rect x="4" y="7" width="16" height="13" rx="2" />
+      <circle cx="9.5" cy="13" r="1.2" fill="currentColor" stroke="none" />
+      <circle cx="14.5" cy="13" r="1.2" fill="currentColor" stroke="none" />
+      <path d="M12 3v4M9 3h6M8 20v2M16 20v2" />
+    </svg>
+  ),
+  Funnel: (p: IconProps) => (
+    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" {...p}>
+      <path d="M3 4h18l-7 8v7l-4-2v-5z" />
+    </svg>
+  ),
 };
 
 /* ============ LOGO ============ */
@@ -747,11 +766,32 @@ function Services() {
       points: ["Claude & OpenAI APIs · MCP servers", "Multi-agent orchestration & RAG", "Voice agents (Vapi), LangGraph, GoHighLevel"],
     },
     {
+      icon: <Icon.Agent />,
+      title: "AI Agents & Automation",
+      blurb:
+        "Deploy AI agents that handle outreach, qualification, scheduling, and support — your team moving at the speed of ten. Agentic workflows wired into the tools you already use.",
+      points: ["Voice agents · Vapi + Twilio + Mailjet", "Outreach, qualification & appointment setting", "Customer support agents with live handoff"],
+    },
+    {
       icon: <Icon.Code />,
       title: "Full-Stack SaaS Builds",
       blurb:
-        "End-to-end product development on a modern, production-proven stack. Web, API, mobile — typed top to bottom, tested, shipped.",
-      points: ["Next.js 15/16 · React 19 · TypeScript", "Hono · Supabase · Prisma · Trigger.dev", "React Native · Expo · EAS (iOS + Android)"],
+        "End-to-end product development on a modern, production-proven stack. Typed top to bottom, tested, deployed, observable from day one.",
+      points: ["Next.js 15/16 · React 19 · TypeScript", "Hono · Supabase · Prisma · Trigger.dev", "Vercel deploys · Sentry · Vitest"],
+    },
+    {
+      icon: <Icon.Mobile />,
+      title: "Mobile Apps — iOS & Android",
+      blurb:
+        "Production-grade native apps on the App Store and Google Play. Offline-first, biometric-secured, GPS-aware — the same stack we ship Rebel Scout on.",
+      points: ["React Native · Expo SDK 54 · EAS build pipeline", "Face ID · biometrics · offline sync · GPS", "TestFlight, App Store, Google Play release"],
+    },
+    {
+      icon: <Icon.Funnel />,
+      title: "Growth Engines & Lead Gen",
+      blurb:
+        "Funnels, landing pages, and CRM-wired lead pipelines that actually move the number — not another pretty brochure site. Attribution, scoring, follow-up automation included.",
+      points: ["Conversion-focused funnels & landing pages", "CRM integrations · JobNimbus · GoHighLevel · HubSpot · Pipedrive", "Attribution tracking · lead scoring · drip automation"],
     },
     {
       icon: <Icon.Architecture />,
@@ -979,15 +1019,89 @@ function ProductDemo() {
     <section style={{ padding: "80px 0 120px", position: "relative" }}>
       <div style={{ maxWidth: 1240, margin: "0 auto", padding: "0 28px" }}>
         <SectionHead
-          eyebrow="What we ship"
+          eyebrow="Featured product · Rebel OS"
           title={
             <>
-              Operations-grade visibility, <span className="serif">from day one.</span>
+              Our flagship — built for the <span className="serif">roofing industry.</span>
             </>
           }
-          sub="Every system we build ships with real observability — deploys, incidents, cost, usage — not as an afterthought. Representative UI below."
+          sub="Rebel OS is the full SaaS stack we ship in-house: API, web, and mobile. A unified lead pipeline, Trigger.dev workflow engine, and CRM sync across JobNimbus and GoHighLevel. Live API, mobile in TestFlight + Play Store beta. Representative UI below."
           align="center"
         />
+        <div
+          className="reveal rebel-apps-strip"
+          style={{
+            marginTop: 36,
+            display: "grid",
+            gridTemplateColumns: "repeat(3, 1fr)",
+            gap: 14,
+          }}
+        >
+          {[
+            {
+              name: "Rebel OS API",
+              desc: "Hono · Supabase · Trigger.dev",
+              tag: "Live",
+              tagColor: "oklch(75% 0.15 140)",
+            },
+            {
+              name: "Rebel Scout",
+              desc: "React Native · Expo · EAS",
+              tag: "Beta",
+              tagColor: "var(--accent)",
+            },
+            {
+              name: "Home Perks",
+              desc: "React Native · Expo · Supabase",
+              tag: "In dev",
+              tagColor: "oklch(58% 0.012 60)",
+            },
+          ].map((a) => (
+            <div
+              key={a.name}
+              style={{
+                padding: "16px 18px",
+                borderRadius: 12,
+                background: "white",
+                border: "1px solid var(--line-2)",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "space-between",
+                gap: 12,
+                transition: "all 200ms",
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.borderColor = "var(--accent)";
+                e.currentTarget.style.transform = "translateY(-2px)";
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.borderColor = "var(--line-2)";
+                e.currentTarget.style.transform = "none";
+              }}
+            >
+              <div style={{ minWidth: 0 }}>
+                <div style={{ fontSize: 14, fontWeight: 700, letterSpacing: "-0.01em" }}>{a.name}</div>
+                <div style={{ fontSize: 12, color: "var(--ink-3)", marginTop: 2 }}>{a.desc}</div>
+              </div>
+              <span
+                className="mono"
+                style={{
+                  flexShrink: 0,
+                  fontSize: 10,
+                  fontWeight: 700,
+                  letterSpacing: "0.08em",
+                  textTransform: "uppercase",
+                  padding: "4px 8px",
+                  borderRadius: 999,
+                  background: "var(--bg-3)",
+                  color: a.tagColor,
+                }}
+              >
+                {a.tag}
+              </span>
+            </div>
+          ))}
+        </div>
         <div
           className="reveal"
           style={{
@@ -1016,7 +1130,7 @@ function ProductDemo() {
               <span style={{ width: 10, height: 10, borderRadius: "50%", background: "#28c840" }} />
             </div>
             <div className="mono" style={{ margin: "0 auto", fontSize: 12, color: "rgba(255,255,255,.5)" }}>
-              ops.sctech-inc.com / demo
+              app.rebel-os / dashboard
             </div>
           </div>
 
@@ -1106,6 +1220,9 @@ function ProductDemo() {
           .demo-side { border-right: none !important; border-bottom: 1px solid oklch(25% 0.012 60); display: flex !important; overflow-x: auto; gap: 6px; padding: 12px !important; }
           .demo-side > .mono { display: none; }
           .demo-side > div:last-child { display: none; }
+        }
+        @media (max-width: 820px){
+          .rebel-apps-strip { grid-template-columns: 1fr !important; }
         }
       `}</style>
     </section>
@@ -1208,11 +1325,11 @@ function TabOverview() {
 
 function TabServices() {
   const rows = [
-    { name: "api-gateway", status: "healthy", p50: "38ms", p99: "210ms", err: "0.01%" },
-    { name: "checkout-svc", status: "healthy", p50: "84ms", p99: "430ms", err: "0.04%" },
-    { name: "inventory-svc", status: "degraded", p50: "140ms", p99: "1.2s", err: "0.42%" },
-    { name: "search-svc", status: "healthy", p50: "56ms", p99: "320ms", err: "0.02%" },
-    { name: "auth-svc", status: "healthy", p50: "22ms", p99: "95ms", err: "0.00%" },
+    { name: "rebel-os-api", status: "healthy", p50: "38ms", p99: "210ms", err: "0.01%" },
+    { name: "lead-pipeline", status: "healthy", p50: "84ms", p99: "430ms", err: "0.04%" },
+    { name: "crm-sync", status: "degraded", p50: "140ms", p99: "1.2s", err: "0.42%" },
+    { name: "trigger-jobs", status: "healthy", p50: "56ms", p99: "320ms", err: "0.02%" },
+    { name: "auth-sso", status: "healthy", p50: "22ms", p99: "95ms", err: "0.00%" },
     { name: "notifications", status: "healthy", p50: "48ms", p99: "260ms", err: "0.05%" },
   ];
   const color = (s: string) =>
