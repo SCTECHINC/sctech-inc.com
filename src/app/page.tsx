@@ -509,7 +509,7 @@ function Hero({ onBookCall }: { onBookCall: () => void }) {
             >
               NEW
             </span>
-            <span>AI-native engineering, from architecture to launch</span>
+            <span>AI is changing the game. Don&apos;t let your company fall behind.</span>
             <Icon.ArrowUpRight />
           </div>
         </div>
