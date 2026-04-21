@@ -1,17 +1,17 @@
-# SC Tech Inc — Website PRD
+# SCTECH INC — Website PRD
 
 ## Overview
-Build a professional company website for SC Tech Inc (sctech-inc.com) that serves as the public face of the consulting business and satisfies Stripe account activation requirements.
+Build a professional company website for SCTECH INC (sctech-inc.com) that serves as the public face of the consulting business and satisfies Stripe account activation requirements.
 
 ## Background
-SC Tech Inc is a boutique technology consulting firm owned and operated by Spencer Caldwell. The company delivers AI-native product engineering, full-stack SaaS builds, systems/workflow automation, legacy modernization, and fractional technical leadership. Spencer has 25+ years of experience spanning Fortune 500 enterprise work (Microsoft, NOV, Enron, ACS/Xerox) and modern AI-native SaaS (Rebel OS, JARVIS, GRIT Hub).
+SCTECH INC is a boutique technology consulting firm owned and operated by Spencer Caldwell. The company delivers AI-native product engineering, full-stack SaaS builds, systems/workflow automation, legacy modernization, and fractional technical leadership. Spencer has 25+ years of experience spanning Fortune 500 enterprise work (Microsoft, NOV, Enron, ACS/Xerox) and modern AI-native SaaS (Rebel OS, JARVIS, GRIT Hub).
 
 The immediate trigger for this website is Stripe account activation, which requires a publicly viewable business website. Beyond Stripe, this site will serve as the company's permanent online presence and a sales surface for the consulting practice.
 
 ## Goals
 1. **Stripe Compliance** — Meet all Stripe website requirements for account activation
-2. **Professional Presence** — Represent SC Tech as a credible, high-quality consulting firm
-3. **Service Showcase** — Clearly communicate what SC Tech does and who it serves
+2. **Professional Presence** — Represent SCTECH as a credible, high-quality consulting firm
+3. **Service Showcase** — Clearly communicate what SCTECH does and who it serves
 4. **Contact Channel** — Provide clear ways for potential clients to reach out
 
 ## Stripe Requirements Checklist
@@ -22,7 +22,7 @@ The immediate trigger for this website is Stripe account activation, which requi
 - [ ] Refund/cancellation policy (consulting services — no physical goods)
 - [ ] HTTPS (automatic via Vercel)
 - [ ] Publicly viewable (no password protection)
-- [ ] Business name matches Stripe account ("SC Tech")
+- [ ] Business name matches Stripe account ("SCTECH")
 
 ## Target Audience
 - Potential consulting clients (businesses needing custom software, technical leadership, or system modernization)

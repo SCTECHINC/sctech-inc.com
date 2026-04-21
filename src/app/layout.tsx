@@ -26,13 +26,13 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://sctech-inc.com"),
-  title: "SC Tech Inc — Boutique Technology Consulting & Custom Software",
+  title: "SCTECH INC — Boutique Technology Consulting & Custom Software",
   description:
     "Boutique, senior-only technology consultancy. 25+ years shipping production software — from Fortune 500 enterprise portals (Microsoft, NOV, UBS, Credit Suisse, Xerox) to AI-native SaaS platforms running live today.",
   openGraph: {
     type: "website",
-    siteName: "SC Tech Inc",
-    title: "SC Tech Inc — Boutique Technology Consulting",
+    siteName: "SCTECH INC",
+    title: "SCTECH INC — Boutique Technology Consulting",
     description:
       "Boutique. Fast. Super intelligent. Master of all. A senior-only consulting team for companies that need a real builder in the room.",
   },

@@ -92,7 +92,7 @@ Replying to this email will reach ${fullName} directly.`;
         {
           From: {
             Email: process.env.MAILJET_FROM_EMAIL || "noreply@sctech-inc.com",
-            Name: process.env.MAILJET_FROM_NAME || "SC Tech Website",
+            Name: process.env.MAILJET_FROM_NAME || "SCTECH Website",
           },
           To: [{ Email: RECIPIENT_EMAIL, Name: RECIPIENT_NAME }],
           ReplyTo: {

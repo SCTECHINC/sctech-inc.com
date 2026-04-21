@@ -1,4 +1,4 @@
-# SC Tech — Case Studies
+# SCTECH — Case Studies
 
 Two clean, short case studies for the website. Both are owned by Spencer (no client approval required to publish the high-level story) and demonstrate complementary capability pillars.
 
@@ -12,7 +12,7 @@ Two clean, short case studies for the website. Both are owned by Spencer (no cli
 ### The Problem
 A residential + commercial roofing company was running sales, production, and back-office through a patchwork of JobNimbus, EagleView, Roofr, Beacon, QuickBooks, and spreadsheets. Quote turnaround was slow, measurement re-entry was error-prone, and nothing talked to anything else.
 
-### What SC Tech Did
+### What SCTECH Did
 - Built custom API-driven integrations between JobNimbus, EagleView, Roofr, Beacon, Mailjet, Twilio, and QuickBooks.
 - Designed an AI-assisted estimate template pipeline with a document-extractor service: **Job → EagleView → measurements → CRM**.
 - Stood up a registry-driven workflow engine and Trigger.dev-based job pipeline as the automation backbone.
@@ -35,7 +35,7 @@ Next.js · TypeScript · Supabase · Trigger.dev · Twilio · Mailjet · JobNimb
 ### The Problem
 An industrial turnaround contractor was coordinating 1,300+ craftsmen through a 10-stage requisition and dispatch workflow — entirely in spreadsheets. Compliance gaps (TWIC, Fit Test, D&A, MVR, Background, site-specific safety) were causing site rejections. Manual requisition handling was slow and error-prone.
 
-### What SC Tech Did
+### What SCTECH Did
 - Designed and built **GRIT Hub** — a mobile-first Next.js 15 / React 19 / Prisma platform covering the full 10-stage pipeline (job award → sourcing → compliance validation → arrival → metrics).
 - Integrated Azure AD (MSAL) SSO, compliance validation for every credential type, Excel/PDF export, and DnD scheduling UI.
 - Translated the legacy spreadsheet process into an end-to-end digital system with an auditable trail.

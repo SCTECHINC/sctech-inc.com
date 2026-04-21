@@ -1,4 +1,4 @@
-# SCTech Inc. — Company Profile & Website Data Pack
+# SCTECH INC. — Company Profile & Website Data Pack
 
 **Audience:** HERMES and any agent or human building `sctech-inc.com`.
 **Role:** Single source of truth for all website copy, claims, and contact information. Every fact on the public site must trace back to this file (or to the companion files it points to). If something is not here and not verifiable, do not publish it — ask Spencer.
@@ -11,7 +11,7 @@
 
 | Field | Value |
 |---|---|
-| Legal name | SCTech Inc. (also displayed as "SC Tech") |
+| Legal name | SCTECH INC. (also displayed as "SCTECH") |
 | Founder / Principal | Spencer Caldwell |
 | Founded | 2005 (original consulting era); reactivated as the current boutique practice in 2025 |
 | HQ / base | Conroe, TX · Greater Houston Area |
@@ -24,7 +24,7 @@
 
 ## 2. Positioning & Voice
 
-### What SCTech Inc. is
+### What SCTECH INC. is
 
 A senior, hand-picked consulting team for companies that need a real builder in the room — not a staffing agency, not a 200-person firm with juniors on the keyboard.
 
@@ -47,7 +47,7 @@ We come in, understand the problem, design the right thing, and ship it. AI-nati
 
 ## 3. Team
 
-SCTech is a **boutique team of ~8–10 people, every member 20+ years in.** Composition:
+SCTECH is a **boutique team of ~8–10 people, every member 20+ years in.** Composition:
 
 - **Spencer Caldwell** — Founder, Principal Engineer, Technical Leader. Public face of the company.
 - **2 senior developers** — full-stack / systems.
@@ -78,7 +78,7 @@ Source of truth: `docs/.ai-assets/spencer-resume.md`. **Use that file verbatim o
 
 **Short website bio (ready to use):**
 
-> Spencer Caldwell has been shipping software for 25+ years — from Fortune 500 enterprise portals (Microsoft, NOV, ACS/Xerox) to AI-native SaaS platforms running live in production today. He founded SCTech Inc. as the boutique consulting practice he always wanted to hire: senior only, opinionated, and accountable for the outcome. He is the architect of the Rebel OS ecosystem (API + web + mobile), lead developer on the GRIT Hub workforce platform at Gallant Industrial, and runs technology and revenue operations for a Texas roofing business — all at the same time.
+> Spencer Caldwell has been shipping software for 25+ years — from Fortune 500 enterprise portals (Microsoft, NOV, ACS/Xerox) to AI-native SaaS platforms running live in production today. He founded SCTECH INC. as the boutique consulting practice he always wanted to hire: senior only, opinionated, and accountable for the outcome. He is the architect of the Rebel OS ecosystem (API + web + mobile), lead developer on the GRIT Hub workforce platform at Gallant Industrial, and runs technology and revenue operations for a Texas roofing business — all at the same time.
 
 **One-line version:** "25+ years shipping software, currently architecting an AI-native SaaS platform running in live sales operations."
 
@@ -182,7 +182,7 @@ From `docs/standards/prd.md`:
 - Terms of Service / Refund & Cancellation Policy (consulting — no physical goods)
 - HTTPS (Vercel default)
 - Public (no password gate)
-- Business name on site = **SC Tech** (matches Stripe account)
+- Business name on site = **SCTECH** (matches Stripe account)
 
 ---
 

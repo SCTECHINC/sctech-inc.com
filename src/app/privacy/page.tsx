@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy · SC Tech Inc",
-  description: "How SC Tech Inc handles personal information collected through sctech-inc.com.",
+  title: "Privacy Policy · SCTECH INC",
+  description: "How SCTECH INC handles personal information collected through sctech-inc.com.",
 };
 
 export default function PrivacyPage() {
@@ -30,7 +30,7 @@ export default function PrivacyPage() {
 
       <Section title="1. Who we are">
         <p>
-          SC Tech Inc. (&ldquo;SC Tech,&rdquo; &ldquo;we,&rdquo; or &ldquo;us&rdquo;) operates the website{" "}
+          SCTECH INC. (&ldquo;SCTECH,&rdquo; &ldquo;we,&rdquo; or &ldquo;us&rdquo;) operates the website{" "}
           <strong>sctech-inc.com</strong>. We are a technology consulting company based in Conroe, Texas. If you have
           questions about this policy, contact <EmailLink />.
         </p>

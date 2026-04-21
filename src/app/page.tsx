@@ -86,7 +86,7 @@ function Logo({ invert, size = 34 }: { invert?: boolean; size?: number }) {
     <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
       <Image
         src="/sctech-logo.png"
-        alt="SC Tech Inc"
+        alt="SCTECH INC"
         width={size}
         height={size}
         priority
@@ -115,7 +115,7 @@ function Logo({ invert, size = 34 }: { invert?: boolean; size?: number }) {
 }
 
 /* ============ NAV ============ */
-function Nav() {
+function Nav({ onStartProject }: { onStartProject: () => void }) {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   useEffect(() => {
@@ -186,8 +186,9 @@ function Nav() {
           ))}
         </nav>
         <div style={{ display: "flex", gap: 10, alignItems: "center" }}>
-          <a
-            href="#contact"
+          <button
+            type="button"
+            onClick={onStartProject}
             className="nav-cta"
             style={{
               fontSize: 14,
@@ -211,7 +212,7 @@ function Nav() {
             }}
           >
             Start a project <Icon.Arrow />
-          </a>
+          </button>
           <button
             className="menu-btn"
             onClick={() => setOpen((v) => !v)}
@@ -243,9 +244,12 @@ function Nav() {
                 {l.label}
               </a>
             ))}
-            <a
-              href="#contact"
-              onClick={() => setOpen(false)}
+            <button
+              type="button"
+              onClick={() => {
+                setOpen(false);
+                onStartProject();
+              }}
               style={{
                 marginTop: 10,
                 padding: "14px 18px",
@@ -257,7 +261,7 @@ function Nav() {
               }}
             >
               Start a project
-            </a>
+            </button>
           </div>
         </div>
       )}
@@ -536,7 +540,7 @@ function Hero({ onBookCall }: { onBookCall: () => void }) {
             color: "var(--ink-2)",
           }}
         >
-          SC Tech Inc is a boutique technology consultancy. Senior-only team, 25+ years shipping production software —
+          SCTECH INC is a boutique technology consultancy. Senior-only team, 25+ years shipping production software —
           from Fortune 500 enterprise portals to AI-native SaaS platforms running live today.
         </p>
 
@@ -632,7 +636,7 @@ function Hero({ onBookCall }: { onBookCall: () => void }) {
           >
             <Image
               src="/sctech-logo.png"
-              alt="SC Tech Inc"
+              alt="SCTECH INC"
               width={86}
               height={86}
               style={{ height: 86, width: "auto", filter: "drop-shadow(0 8px 16px rgba(230,110,40,.35))" }}
@@ -1081,7 +1085,7 @@ function ProductDemo() {
                     }}
                   />
                   <div>
-                    <div style={{ fontSize: 13, fontWeight: 600 }}>SC Tech</div>
+                    <div style={{ fontSize: 13, fontWeight: 600 }}>SCTECH</div>
                     <div style={{ fontSize: 11, color: "rgba(255,255,255,.5)" }}>CST · available</div>
                   </div>
                 </div>
@@ -2304,7 +2308,7 @@ function Footer() {
             fontSize: 13,
           }}
         >
-          <div>© 2026 SC Tech Inc. All rights reserved.</div>
+          <div>© 2026 SCTECH INC. All rights reserved.</div>
           <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
             <span style={{ width: 6, height: 6, borderRadius: "50%", background: "oklch(75% 0.15 140)" }} />
             All systems operational
@@ -2345,7 +2349,7 @@ export default function Page() {
 
   return (
     <>
-      <Nav />
+      <Nav onStartProject={openModal} />
       <Hero onBookCall={openModal} />
       <Services />
       <Stats />

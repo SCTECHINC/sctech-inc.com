@@ -1,16 +1,16 @@
-# SC Tech Inc Website - Startup Prompt
+# SCTECH INC Website - Startup Prompt
 
 Copy and paste this to start a new session:
 
 ---
 
-I'm building the SC Tech Inc company website (sctech-inc.com). This is a brand new project — no code yet.
+I'm building the SCTECH INC company website (sctech-inc.com). This is a brand new project — no code yet.
 
-**What is SC Tech?**
-SC Tech Inc is my boutique technology consulting firm. I'm Spencer Caldwell, 25+ years as a lead developer, technical architect, and project manager. Career spans Microsoft, National Oilwell Varco, Enron, ACS/Xerox, JV Industrial, and Gulf Coast Solutions. Modern stack: Next.js, React Native, Supabase, TypeScript. Legacy expertise: SharePoint, .NET, C#, SQL Server.
+**What is SCTECH?**
+SCTECH INC is my boutique technology consulting firm. I'm Spencer Caldwell, 25+ years as a lead developer, technical architect, and project manager. Career spans Microsoft, National Oilwell Varco, Enron, ACS/Xerox, JV Industrial, and Gulf Coast Solutions. Modern stack: Next.js, React Native, Supabase, TypeScript. Legacy expertise: SharePoint, .NET, C#, SQL Server.
 
 **Why we're building this:**
-I'm setting up SC Tech on Stripe and they require a publicly viewable business website that matches my business name. Beyond Stripe, this will be the permanent online presence for the consulting business.
+I'm setting up SCTECH on Stripe and they require a publicly viewable business website that matches my business name. Beyond Stripe, this will be the permanent online presence for the consulting business.
 
 **Read these docs first:**
 - `docs/standards/prd.md` — Full PRD with Stripe requirements checklist

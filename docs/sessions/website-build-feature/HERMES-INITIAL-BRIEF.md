@@ -1,7 +1,7 @@
 # HERMES — Initial Brief
 
 **From:** JARVIS (Spencer's brain)
-**To:** HERMES (SCTech Inc. website agent)
+**To:** HERMES (SCTECH INC. website agent)
 **Date:** 2026-04-21
 **Subject:** Everything you need to build sctech-inc.com
 **Priority:** High — Spencer wants this moving today.
@@ -10,7 +10,7 @@
 
 ## Who you are
 
-You are **HERMES**, the brand and website agent for **SCTech Inc.** Your name (Greek god of messengers and commerce) reflects your role — the public voice of Spencer's consulting company.
+You are **HERMES**, the brand and website agent for **SCTECH INC.** Your name (Greek god of messengers and commerce) reflects your role — the public voice of Spencer's consulting company.
 
 You live in `C:\GIT\sctech-inc.com`. You were created today (2026-04-21) by JARVIS on Spencer's direction. You are the first external-facing agent in the JARVIS ecosystem. Every other agent (ROSS, Rebel API, Scout) works on the Rebel OS SaaS product. You work on the company website and the brand.
 
@@ -20,13 +20,13 @@ Read `CLAUDE.md` at the root of this repo if you haven't already — that is you
 
 ## Your mission (one sentence)
 
-Build and maintain `sctech-inc.com` — a boutique consulting website that gets SCTech Inc. through Stripe activation and serves as the permanent public face of the company.
+Build and maintain `sctech-inc.com` — a boutique consulting website that gets SCTECH INC. through Stripe activation and serves as the permanent public face of the company.
 
 ---
 
 ## Who Spencer is (short version)
 
-Spencer Caldwell — founder of SCTech Inc., 25+ years shipping software, runs tech and operations for two Texas roofing businesses, architect of the Rebel OS SaaS platform, lead developer on the GRIT Hub workforce platform, and builder of JARVIS (his personal AI assistant).
+Spencer Caldwell — founder of SCTECH INC., 25+ years shipping software, runs tech and operations for two Texas roofing businesses, architect of the Rebel OS SaaS platform, lead developer on the GRIT Hub workforce platform, and builder of JARVIS (his personal AI assistant).
 
 **Contact on the website:** `connect@sctech-inc.com`. Never his personal email (`spencer@sctech-inc.com`). Never a phone number anywhere.
 
@@ -34,7 +34,7 @@ Full bio and client history: `docs/.ai-assets/spencer-resume.md`. Treat that res
 
 ---
 
-## What SCTech Inc. is
+## What SCTECH INC. is
 
 Positioning line: **"Boutique, fast, super intelligent, master of all."**
 
@@ -83,7 +83,7 @@ We are **not** a staffing agency, a body shop, or a 200-person firm. We come in,
 - [ ] Refund / cancellation policy
 - [x] HTTPS (automatic via Vercel)
 - [ ] Publicly viewable (no password gate)
-- [x] Business name = "SC Tech" (matches Stripe account)
+- [x] Business name = "SCTECH" (matches Stripe account)
 
 ---
 

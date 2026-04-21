@@ -2,7 +2,7 @@
 **Date:** 2026-03-27
 
 ## Context
-Spencer is setting up SC Tech Inc on Stripe and needs a business website to complete account activation. This is also an opportunity to build a proper company website for the consulting business.
+Spencer is setting up SCTECH INC on Stripe and needs a business website to complete account activation. This is also an opportunity to build a proper company website for the consulting business.
 
 ## What We Did
 1. **Researched Stripe requirements** — Fetched and analyzed Stripe's website checklist (docs.stripe.com/get-started/checklist/website)

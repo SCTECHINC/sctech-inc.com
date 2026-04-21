@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Terms & Refund Policy · SC Tech Inc",
-  description: "Terms of service and refund/cancellation policy for SC Tech Inc consulting engagements.",
+  title: "Terms & Refund Policy · SCTECH INC",
+  description: "Terms of service and refund/cancellation policy for SCTECH INC consulting engagements.",
 };
 
 export default function TermsPage() {
@@ -28,9 +28,9 @@ export default function TermsPage() {
         Last updated: April 21, 2026
       </div>
 
-      <Section title="1. About SC Tech Inc.">
+      <Section title="1. About SCTECH INC.">
         <p>
-          SC Tech Inc. (&ldquo;SC Tech,&rdquo; &ldquo;we,&rdquo; or &ldquo;us&rdquo;) is a technology consulting company
+          SCTECH INC. (&ldquo;SCTECH,&rdquo; &ldquo;we,&rdquo; or &ldquo;us&rdquo;) is a technology consulting company
           based in Conroe, Texas. We provide professional services: software architecture, design, development,
           integration, legacy modernization, and ongoing technical operations. We do not sell physical goods through
           this website.
@@ -40,7 +40,7 @@ export default function TermsPage() {
       <Section title="2. Engagements">
         <p>
           All consulting work is governed by a written statement of work (&ldquo;SOW&rdquo;) or master services agreement
-          executed between SC Tech and the client. The SOW is the controlling document for scope, deliverables,
+          executed between SCTECH and the client. The SOW is the controlling document for scope, deliverables,
           acceptance criteria, timelines, and fees.
         </p>
         <p>
@@ -93,7 +93,7 @@ export default function TermsPage() {
       <Section title="5. Intellectual property">
         <p>
           Subject to full payment of fees, we assign to the client all right, title, and interest in the custom work
-          product specifically created for that client&rsquo;s engagement. SC Tech retains ownership of its general know-how,
+          product specifically created for that client&rsquo;s engagement. SCTECH retains ownership of its general know-how,
           methodologies, reusable utilities, and pre-existing materials, and of any open-source components incorporated
           subject to their own licenses.
         </p>
@@ -101,7 +101,7 @@ export default function TermsPage() {
 
       <Section title="6. Confidentiality">
         <p>
-          SC Tech handles client information as confidential and will not disclose it except as required to perform the
+          SCTECH handles client information as confidential and will not disclose it except as required to perform the
           services or as required by law. Client-specific NDAs executed between the parties control over any more
           general language in these terms.
         </p>
@@ -109,7 +109,7 @@ export default function TermsPage() {
 
       <Section title="7. Warranties and disclaimers">
         <p>
-          SC Tech will perform services in a professional and workmanlike manner. Except as expressly set out in a
+          SCTECH will perform services in a professional and workmanlike manner. Except as expressly set out in a
           written SOW, all services are provided &ldquo;as is&rdquo; and all other warranties — express, implied, or
           statutory — are disclaimed to the maximum extent permitted by law.
         </p>
@@ -117,8 +117,8 @@ export default function TermsPage() {
 
       <Section title="8. Limitation of liability">
         <p>
-          To the maximum extent permitted by law, SC Tech&rsquo;s total aggregate liability for any claim arising out of or
-          related to an engagement is limited to the fees paid by the client to SC Tech under the applicable SOW in the
+          To the maximum extent permitted by law, SCTECH&rsquo;s total aggregate liability for any claim arising out of or
+          related to an engagement is limited to the fees paid by the client to SCTECH under the applicable SOW in the
           six (6) months preceding the event giving rise to the claim. Neither party is liable for indirect, special,
           incidental, consequential, or punitive damages.
         </p>
@@ -134,7 +134,7 @@ export default function TermsPage() {
 
       <Section title="10. Changes">
         <p>
-          SC Tech may update these terms from time to time. The &ldquo;Last updated&rdquo; date above reflects the most
+          SCTECH may update these terms from time to time. The &ldquo;Last updated&rdquo; date above reflects the most
           recent revision. Material changes will be announced on this page.
         </p>
       </Section>

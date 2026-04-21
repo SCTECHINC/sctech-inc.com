@@ -1,4 +1,4 @@
-# SC Tech — Capabilities
+# SCTECH — Capabilities
 
 Website-ready capability pillars distilled from the 2026 resume. These map to the Services section of sctech-inc.com and to individual service pages as the site grows.
 

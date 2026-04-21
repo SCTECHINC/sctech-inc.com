@@ -13,7 +13,7 @@ Everything required to bring HERMES online as a real member of the JARVIS ecosys
 - ✅ `C:\GIT\sctech-inc.com\CLAUDE.md` — HERMES identity, mission, hard rules, comms protocol.
 - ✅ `C:\GIT\sctech-inc.com\docs\company-profile.md` — Single source of truth for website copy.
 - ✅ `C:\GIT\JARVIS\shared\references\ecosystem-registry.md` — HERMES entry added under "External-Facing Personas" (channel ID / Slack IDs still `TBD`).
-- ✅ `C:\GIT\JARVIS\CLAUDE.md` — Routing table updated: "tell HERMES" / "tell the website" / "tell SCTech" → `hermes`.
+- ✅ `C:\GIT\JARVIS\CLAUDE.md` — Routing table updated: "tell HERMES" / "tell the website" / "tell SCTECH" → `hermes`.
 
 ---
 
@@ -25,7 +25,7 @@ Supabase project: `qdbpamfsqgbwpzyvviiv` · schema `jarvis`.
 
 ```sql
 INSERT INTO jarvis.personas (name, email_alias, role, active)
-VALUES ('hermes', 'connect@sctech-inc.com', 'Brand & website agent for SCTech Inc.', true);
+VALUES ('hermes', 'connect@sctech-inc.com', 'Brand & website agent for SCTECH INC.', true);
 ```
 
 *(Adjust columns to match the actual `jarvis.personas` schema — this matches the pattern used for the 30-persona registry.)*
@@ -34,7 +34,7 @@ VALUES ('hermes', 'connect@sctech-inc.com', 'Brand & website agent for SCTech In
 
 ```sql
 INSERT INTO jarvis.channels (name, description, active)
-VALUES ('hermes', 'HERMES — SCTech Inc. website agent', true)
+VALUES ('hermes', 'HERMES — SCTECH INC. website agent', true)
 RETURNING id;
 ```
 

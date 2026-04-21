@@ -48,7 +48,7 @@ Global energy equipment & digital operations · Houston, TX
 - Modernized legacy .NET applications and SharePoint portals; introduced automated deployment pipelines and tightened security posture on customer-facing operational tooling.
 - Partnered with field engineers and operations leadership to translate edge-case rig problems into production software features.
 
-### SCTech Inc. — Founder / Principal Consultant (2005 – 2018)
+### SCTECH INC. — Founder / Principal Consultant (2005 – 2018)
 Enterprise SharePoint, .NET, and SQL Server consulting — Fortune 500 and mid-market clients.
 
 ### Gulf Coast Solutions — Lead Developer (Jan 2014 – Feb 2018)
