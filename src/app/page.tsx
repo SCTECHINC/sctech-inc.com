@@ -635,6 +635,7 @@ function Hero({ onBookCall }: { onBookCall: () => void }) {
           <ParticleHero />
           <FloatingChip style={{ top: "14%", left: "8%" }} icon={<Icon.Code />} label="Custom dev" />
           <FloatingChip style={{ top: "22%", right: "10%" }} icon={<Icon.Cloud />} label="Cloud ops" accent />
+          <FloatingChip style={{ top: "48%", left: "3%" }} icon={<Icon.Mobile />} label="Mobile apps" accent />
           <FloatingChip style={{ bottom: "18%", left: "16%" }} icon={<Icon.Data />} label="Data platforms" />
           <FloatingChip style={{ bottom: "14%", right: "14%" }} icon={<Icon.AI />} label="AI systems" />
           <div
