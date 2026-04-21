@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef, type CSSProperties, type ReactNode, type SVGProps, Fragment } from "react";
 import Image from "next/image";
+import { ContactModal } from "@/components/contact-modal";
 
 /* ============ ICONS ============ */
 type IconProps = SVGProps<SVGSVGElement>;
@@ -425,7 +426,7 @@ function FloatingChip({ style, icon, label, accent }: { style?: CSSProperties; i
   );
 }
 
-function Hero() {
+function Hero({ onBookCall }: { onBookCall: () => void }) {
   return (
     <section id="top" style={{ position: "relative", padding: "40px 0 60px", overflow: "hidden" }}>
       <div aria-hidden style={{ position: "absolute", inset: 0, pointerEvents: "none" }}>
@@ -543,8 +544,9 @@ function Hero() {
           className="reveal"
           style={{ display: "flex", justifyContent: "center", gap: 12, marginTop: 34, flexWrap: "wrap" }}
         >
-          <a
-            href="#contact"
+          <button
+            type="button"
+            onClick={onBookCall}
             style={{
               display: "inline-flex",
               alignItems: "center",
@@ -568,7 +570,7 @@ function Hero() {
             }}
           >
             Book a discovery call <Icon.Arrow />
-          </a>
+          </button>
           <a
             href="#cases"
             style={{
@@ -1986,7 +1988,7 @@ function FAQ() {
 }
 
 /* ============ CTA ============ */
-function CTA() {
+function CTA({ onBookCall }: { onBookCall: () => void }) {
   return (
     <section id="contact" style={{ padding: "60px 0 100px" }}>
       <div style={{ maxWidth: 1240, margin: "0 auto", padding: "0 28px" }}>
@@ -2067,25 +2069,77 @@ function CTA() {
               </p>
             </div>
             <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
-              <a
-                href="mailto:connect@sctech-inc.com"
+              <div
                 style={{
-                  padding: "22px 26px",
+                  padding: "24px 26px",
                   borderRadius: "var(--radius)",
                   background: "rgba(255,255,255,0.06)",
                   border: "1px solid rgba(255,255,255,.1)",
-                  display: "block",
                 }}
               >
-                <div style={{ fontSize: 12, color: "rgba(255,255,255,.55)", marginBottom: 6 }}>Email us directly</div>
-                <div style={{ fontSize: 20, fontWeight: 600 }}>connect@sctech-inc.com</div>
-              </a>
-              <a
-                href="mailto:connect@sctech-inc.com?subject=Discovery%20call%20request"
+                <div
+                  className="mono"
+                  style={{
+                    fontSize: 11,
+                    letterSpacing: "0.18em",
+                    color: "rgba(255,255,255,.5)",
+                    textTransform: "uppercase",
+                    marginBottom: 18,
+                  }}
+                >
+                  What the call looks like
+                </div>
+                {[
+                  { n: "01", t: "Your problem", d: "~10 min — tell us the shape of what you're building or what's broken." },
+                  { n: "02", t: "Our read", d: "~10 min — we tell you, honestly, how we'd approach it." },
+                  { n: "03", t: "Next steps", d: "~5 min — clear next steps, or none. Either way, you leave with a plan." },
+                ].map((s, i, arr) => (
+                  <div
+                    key={s.n}
+                    style={{
+                      display: "flex",
+                      gap: 14,
+                      alignItems: "flex-start",
+                      paddingBottom: i < arr.length - 1 ? 14 : 0,
+                      marginBottom: i < arr.length - 1 ? 14 : 0,
+                      borderBottom: i < arr.length - 1 ? "1px solid rgba(255,255,255,.06)" : "none",
+                    }}
+                  >
+                    <div
+                      className="mono"
+                      style={{
+                        flexShrink: 0,
+                        width: 32,
+                        height: 32,
+                        borderRadius: 8,
+                        background: "rgba(255,255,255,.08)",
+                        color: "var(--accent-2)",
+                        display: "grid",
+                        placeItems: "center",
+                        fontSize: 11,
+                        fontWeight: 700,
+                      }}
+                    >
+                      {s.n}
+                    </div>
+                    <div>
+                      <div style={{ fontSize: 14, fontWeight: 600, color: "white" }}>{s.t}</div>
+                      <div style={{ fontSize: 13, color: "rgba(255,255,255,.6)", lineHeight: 1.5, marginTop: 3 }}>
+                        {s.d}
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+              <button
+                type="button"
+                onClick={onBookCall}
                 style={{
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "space-between",
+                  width: "100%",
+                  textAlign: "left",
                   padding: "22px 26px",
                   borderRadius: "var(--radius)",
                   gap: 16,
@@ -2102,7 +2156,7 @@ function CTA() {
                   <div style={{ fontSize: 18, marginTop: 2 }}>30 min with a principal engineer</div>
                 </div>
                 <Icon.Arrow />
-              </a>
+              </button>
             </div>
           </div>
         </div>
@@ -2267,6 +2321,8 @@ function Footer() {
 
 /* ============ PAGE ============ */
 export default function Page() {
+  const [modalOpen, setModalOpen] = useState(false);
+
   useEffect(() => {
     const els = document.querySelectorAll(".reveal");
     const io = new IntersectionObserver(
@@ -2284,10 +2340,13 @@ export default function Page() {
     return () => io.disconnect();
   }, []);
 
+  const openModal = () => setModalOpen(true);
+  const closeModal = () => setModalOpen(false);
+
   return (
     <>
       <Nav />
-      <Hero />
+      <Hero onBookCall={openModal} />
       <Services />
       <Stats />
       <ProductDemo />
@@ -2295,8 +2354,9 @@ export default function Page() {
       <Process />
       <Cases />
       <FAQ />
-      <CTA />
+      <CTA onBookCall={openModal} />
       <Footer />
+      <ContactModal open={modalOpen} onClose={closeModal} />
     </>
   );
 }
